@@ -1,0 +1,34 @@
+enum french_key {
+
+	FR_EMPT			= 0x00,
+	FR_TRANS,
+	FR_AMP,  
+	FR_EACU,
+	FR_QUOT,		/* 0x20 */
+	FR_APOS,
+	FR_LPAR,
+	FR_MINS,
+	FR_EGRV,
+	FR_UNDS,
+	FR_CCED,
+	FR_AGRV,
+	FR_ENTR,
+	FR_ESC,
+	FR_BSPC,
+	FR_TAB,
+	FR_SPAC,
+	FR_RPAR,
+	FR_EQUA,
+	FR_HAT,
+	FR_DLR,			/* 0x30 */
+	FR_AST			=0x32,
+	FR_M,
+	FR_UGRV,
+	FR_SCLN			=0x36,
+	FR_COLN,
+	FR_EXCL,
+	FR_CAPL
+
+};
+
+
