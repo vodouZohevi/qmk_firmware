@@ -1,2 +1,2 @@
-
-EXTRAFLAGS += -flto		
+RGBLIGHT_ENABLE = yes
+EXTRAFLAGS += -flto	
