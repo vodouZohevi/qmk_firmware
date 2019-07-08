@@ -1,7 +1,7 @@
 // #pragma once
 
-// #define RGBLIGHT_ANIMATIONS    // Underglow animations. 
-#define RGBLIGHT_EFFECT_STATIC_GRADIENT
+#define RGBLIGHT_EFFECT_STATIC_GRADIENT +5
+// #define RGBLIGHT_EFFECT_BREATHING
 #define RGB_DI_PIN B2
 #define RGBLED_NUM 30
 #define RGBLIGHT_HUE_STEP 10    // How much each press of rgb_hue changes hue

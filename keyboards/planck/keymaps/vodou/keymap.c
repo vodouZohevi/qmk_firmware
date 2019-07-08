@@ -86,18 +86,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 /* Raise
- * ,-----------------------------------------------------------------------------------.
+ * ,-------------------------------------------------------------------------------------.
  * |   `  |   !  |   "  |   #  |   $  |   %  |   ^  |   &  |   *  |   (  |   )  | Bksp |
- * |------+------+------+------+------+-------------+------+------+------+------+------|
+ * |------+------+------+------+------+-------------+------+------+------+------+-------|
  * |      |   ~  |   #  |   /  |   {  |   [  |   ]  |   }  |   \  |   -  |   =  |  |   |
- * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |      |      |      |      |      |      |      |      |  @  |   _  |   +  |Enter |
- * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |------+------+------+------+------+------------+------+------+------+------+--------|
+ * |      |      |      |      |      |      |      |      |  @  |   _  |   +  |  Enter|
+ * |------+------+------+------+------+------+------+------+------+------+------+-------|
  * |      |      |      |      |      |    Space    |      | Home | PgDn | PgUp | End  |            
- * `-----------------------------------------------------------------------------------'
+ * `------------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_planck_grid(
-    KC_GRV,   KC_EXLM, KC_DQUO,       LALT(KC_4), KC_DLR,   KC_PERC,  KC_CIRC,  KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSPC, 
+    KC_GRV,   KC_EXLM, KC_DQUO,    KC_HASH, KC_DLR,   KC_PERC,  KC_CIRC,  KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSPC, 
     XXXXXXX,  KC_TILD, KC_NUHS, KC_SLSH,    KC_LCBR,  KC_LBRC,  KC_RBRC,  KC_RCBR, KC_BSLS, KC_MINS, KC_EQL,  KC_PIPE, 
     XXXXXXX,  XXXXXXX, XXXXXXX,     XXXXXXX,    XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX, KC_AT, KC_UNDS, KC_PLUS, MT(MOD_LSFT, KC_ENT), 
     _______,  XXXXXXX, _______,       _______,    _______,  KC_SPC,   KC_SPC,   _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END
@@ -125,9 +125,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Space fn
  * ,-----------------------------------------------------------------------------------.
- * |PRNT SC|      |  UP  |      |      |      |      |      |      |      |      |SLEEP |
+ * |PRNT SC|      |  UP  |      |      |      |      |      |      |      | SLEEP |  BROWSER BACK|
   * |-------+------+------+------+------+------------+------+------+------+------+------| 
- * |       | LEFT | DOWN | RIGHT|      |      |      | MS Down | MS Left |  MS Up  | MS Right |      |
+ * |       | LEFT | DOWN | RIGHT|      |MS BTN 1|MS BTN 2| MS Down | MS Up |  MS Left  | MS Right |
  * |-------+------+------+------+------+------|------+------+------+------+------+------| 
  * |       |      |      |      |      |      |      |      |      |      |      |      |
  * |-------+------+------+------+------+------+------+------+------+------+------+------|
@@ -135,10 +135,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_SPACE_FN] = LAYOUT_planck_grid(
-    KC_PSCR,  XXXXXXX, KC_UP,    XXXXXXX,   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,   KC_SLEP, 
-    XXXXXXX,  KC_LEFT,  KC_DOWN,  KC_RIGHT,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_MS_DOWN, KC_MS_LEFT,  KC_MS_UP,   KC_MS_RIGHT,   XXXXXXX, 
+    KC_PSCR,  XXXXXXX, KC_UP,    XXXXXXX,   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX, XXXXXXX,  XXXXXXX, KC_SLEP, KC_WWW_BACK,
+    XXXXXXX,  KC_LEFT,  KC_DOWN,  KC_RIGHT,  XXXXXXX,  XXXXXXX,  KC_MS_BTN1,  KC_MS_BTN2, KC_MS_DOWN, KC_MS_UP,  KC_MS_LEFT,   KC_MS_RIGHT,
     XXXXXXX,  XXXXXXX, XXXXXXX,  XXXXXXX,   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX, XXXXXXX,  XXXXXXX,     KC_MEDIA_PREV_TRACK,    KC_MEDIA_NEXT_TRACK, 
-    XXXXXXX,  XXXXXXX, XXXXXXX,  XXXXXXX,   XXXXXXX,  _______,  _______,  XXXXXXX, KC__MUTE, KC_AUDIO_VOL_DOWN,  KC_AUDIO_VOL_UP,  KC_MEDIA_PLAY_PAUSE
+    XXXXXXX,  XXXXXXX, XXXXXXX,  XXXXXXX,   XXXXXXX,  _______,  _______,  XXXXXXX, KC_AUDIO_MUTE, KC_AUDIO_VOL_DOWN,  KC_AUDIO_VOL_UP,  KC_MEDIA_PLAY_PAUSE
 ),
 
 
